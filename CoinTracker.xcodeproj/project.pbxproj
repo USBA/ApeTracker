@@ -13,15 +13,21 @@
 		02087F9D27E762A30027B8B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02087F8B27E762A00027B8B8 /* ContentView.swift */; };
 		02087F9E27E762A30027B8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02087F8C27E762A30027B8B8 /* Assets.xcassets */; };
 		02087F9F27E762A30027B8B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02087F8C27E762A30027B8B8 /* Assets.xcassets */; };
+		02087FD627E76D200027B8B8 /* CoinVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02087FD527E76D200027B8B8 /* CoinVM.swift */; };
+		02087FD727E76D200027B8B8 /* CoinVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02087FD527E76D200027B8B8 /* CoinVM.swift */; };
+		020883DB27E78AA80027B8B8 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020883DA27E78AA80027B8B8 /* Coin.swift */; };
+		020883DC27E78AA80027B8B8 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020883DA27E78AA80027B8B8 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02087F8A27E762A00027B8B8 /* CoinTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTrackerApp.swift; sourceTree = "<group>"; };
 		02087F8B27E762A00027B8B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02087F8C27E762A30027B8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		02087F9127E762A30027B8B8 /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02087F9127E762A30027B8B8 /* $APE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = $APE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02087F9727E762A30027B8B8 /* CoinTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02087F9927E762A30027B8B8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		02087FD527E76D200027B8B8 /* CoinVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinVM.swift; sourceTree = "<group>"; };
+		020883DA27E78AA80027B8B8 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,10 @@
 		02087F8927E762A00027B8B8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				02087F8A27E762A00027B8B8 /* CoinTrackerApp.swift */,
-				02087F8B27E762A00027B8B8 /* ContentView.swift */,
+				02087FAA27E7649C0027B8B8 /* App */,
+				020883E027E791310027B8B8 /* Models */,
+				02087FA827E764850027B8B8 /* ViewModels */,
+				02087FA927E764900027B8B8 /* Views */,
 				02087F8C27E762A30027B8B8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -64,7 +72,7 @@
 		02087F9227E762A30027B8B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02087F9127E762A30027B8B8 /* CoinTracker.app */,
+				02087F9127E762A30027B8B8 /* $APE.app */,
 				02087F9727E762A30027B8B8 /* CoinTracker.app */,
 			);
 			name = Products;
@@ -76,6 +84,38 @@
 				02087F9927E762A30027B8B8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		02087FA827E764850027B8B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02087FD527E76D200027B8B8 /* CoinVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		02087FA927E764900027B8B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02087F8B27E762A00027B8B8 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02087FAA27E7649C0027B8B8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				02087F8A27E762A00027B8B8 /* CoinTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		020883E027E791310027B8B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				020883DA27E78AA80027B8B8 /* Coin.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +135,7 @@
 			);
 			name = "CoinTracker (iOS)";
 			productName = "CoinTracker (iOS)";
-			productReference = 02087F9127E762A30027B8B8 /* CoinTracker.app */;
+			productReference = 02087F9127E762A30027B8B8 /* $APE.app */;
 			productType = "com.apple.product-type.application";
 		};
 		02087F9627E762A30027B8B8 /* CoinTracker (macOS) */ = {
@@ -177,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02087F9C27E762A30027B8B8 /* ContentView.swift in Sources */,
+				02087FD627E76D200027B8B8 /* CoinVM.swift in Sources */,
+				020883DB27E78AA80027B8B8 /* Coin.swift in Sources */,
 				02087F9A27E762A30027B8B8 /* CoinTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02087F9D27E762A30027B8B8 /* ContentView.swift in Sources */,
+				02087FD727E76D200027B8B8 /* CoinVM.swift in Sources */,
+				020883DC27E78AA80027B8B8 /* Coin.swift in Sources */,
 				02087F9B27E762A30027B8B8 /* CoinTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +368,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.CoinTracker;
-				PRODUCT_NAME = CoinTracker;
+				PRODUCT_NAME = $APE;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +398,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.CoinTracker;
-				PRODUCT_NAME = CoinTracker;
+				PRODUCT_NAME = $APE;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
