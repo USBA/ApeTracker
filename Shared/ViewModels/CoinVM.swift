@@ -8,10 +8,9 @@
 import SwiftUI
 
 class CoinVM: ObservableObject {
-    @Published var coinPrice: Double = 0
+    @Published var coinPrice: String = ""
     @Published var isLoading = false
     
-    let apiKey = "87C3D5D1-3743-4E0D-B2DB-DADD405B01A3"
     let generator = UINotificationFeedbackGenerator()
 }
 
@@ -19,7 +18,7 @@ extension CoinVM {
     // MARK: Get Coin Price API Call
     func fetchCoinPrice(symbol: String) async {
         
-        guard let url = URL(string: "https://rest.coinapi.io/v1/exchangerate/\(symbol)/USD?apikey=\(apiKey)") else {
+        guard let url = URL(string: "https://api.binance.com/api/v3/ticker/price?symbol=\(symbol)") else {
             isLoading = false
             return
         }
@@ -27,9 +26,9 @@ extension CoinVM {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let coin = try JSONDecoder().decode(Coin.self, from: data)
-            print("fetchCoinPrice - response: \(data)")
+            print("fetchCoinPrice - response: \(coin)")
             DispatchQueue.main.async {
-                self.coinPrice = coin.rate ?? 0
+                self.coinPrice = coin.price ?? ""
                 self.isLoading = false
             }
         } catch {

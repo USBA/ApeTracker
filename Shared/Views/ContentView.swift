@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var coinVM = CoinVM()
-    @AppStorage("trackingSymbol") var trackingSymbol = "APE"
+    @AppStorage("trackingSymbol") var trackingSymbol = "APEUSDT"
     
     
     var body: some View {
@@ -33,16 +33,18 @@ struct ContentView: View {
                     }
                     .padding(.bottom, 60)
                 
-                Text(coinVM.coinPrice.formatted(.number))
+                Text(Double(coinVM.coinPrice)?.formatted(.number) ?? "0.0000")
                     .font(.system(size: 60, design: .default))
                     .fontWeight(.bold)
                     .lineLimit(1)
+                    .redacted(reason: coinVM.coinPrice.isEmpty ? .placeholder : [])
                 
                 Text("USD")
                     .font(.system(size: 30, design: .default))
                     .fontWeight(.semibold)
                     .lineLimit(1)
                     .foregroundColor(.white.opacity(0.75))
+                    .redacted(reason: coinVM.coinPrice.isEmpty ? .placeholder : [])
             }
             .foregroundColor(.white)
             .padding(35)
