@@ -26,8 +26,9 @@ struct ContentView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .blur(radius: 50)
-                .ignoresSafeArea(.all)
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .clipped()
+                .ignoresSafeArea(.all)
             
             VStack(spacing: 0) {
                 Spacer()
