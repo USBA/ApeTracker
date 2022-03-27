@@ -17,7 +17,39 @@
 		02087FD727E76D200027B8B8 /* CoinVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02087FD527E76D200027B8B8 /* CoinVM.swift */; };
 		020883DB27E78AA80027B8B8 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020883DA27E78AA80027B8B8 /* Coin.swift */; };
 		020883DC27E78AA80027B8B8 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020883DA27E78AA80027B8B8 /* Coin.swift */; };
+		0281D87027F0788600CDC3C1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0281D86F27F0788600CDC3C1 /* WidgetKit.framework */; };
+		0281D87227F0788600CDC3C1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0281D87127F0788600CDC3C1 /* SwiftUI.framework */; };
+		0281D87527F0788600CDC3C1 /* CurrentPriceWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0281D87427F0788600CDC3C1 /* CurrentPriceWidget.swift */; };
+		0281D87A27F0788800CDC3C1 /* CurrentPriceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0281D87627F0788600CDC3C1 /* CurrentPriceWidget.intentdefinition */; };
+		0281D87B27F0788800CDC3C1 /* CurrentPriceWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 0281D87627F0788600CDC3C1 /* CurrentPriceWidget.intentdefinition */; };
+		0281D87E27F0788800CDC3C1 /* CurrentPriceWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0281D86D27F0788600CDC3C1 /* CurrentPriceWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0281D88427F078BE00CDC3C1 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020883DA27E78AA80027B8B8 /* Coin.swift */; };
+		0281D88527F0813C00CDC3C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02087F8C27E762A30027B8B8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0281D87C27F0788800CDC3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02087F8527E762A00027B8B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0281D86C27F0788600CDC3C1;
+			remoteInfo = CurrentPriceWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0281D87F27F0788800CDC3C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0281D87E27F0788800CDC3C1 /* CurrentPriceWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02087F8A27E762A00027B8B8 /* CoinTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTrackerApp.swift; sourceTree = "<group>"; };
@@ -28,6 +60,12 @@
 		02087F9927E762A30027B8B8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		02087FD527E76D200027B8B8 /* CoinVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinVM.swift; sourceTree = "<group>"; };
 		020883DA27E78AA80027B8B8 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		0281D86D27F0788600CDC3C1 /* CurrentPriceWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CurrentPriceWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0281D86F27F0788600CDC3C1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0281D87127F0788600CDC3C1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0281D87427F0788600CDC3C1 /* CurrentPriceWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPriceWidget.swift; sourceTree = "<group>"; };
+		0281D87627F0788600CDC3C1 /* CurrentPriceWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CurrentPriceWidget.intentdefinition; sourceTree = "<group>"; };
+		0281D87927F0788800CDC3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +83,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0281D86A27F0788600CDC3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0281D87227F0788600CDC3C1 /* SwiftUI.framework in Frameworks */,
+				0281D87027F0788600CDC3C1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +100,8 @@
 			children = (
 				02087F8927E762A00027B8B8 /* Shared */,
 				02087F9827E762A30027B8B8 /* macOS */,
+				0281D87327F0788600CDC3C1 /* CurrentPriceWidget */,
+				0281D86E27F0788600CDC3C1 /* Frameworks */,
 				02087F9227E762A30027B8B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +123,7 @@
 			children = (
 				02087F9127E762A30027B8B8 /* $APE.app */,
 				02087F9727E762A30027B8B8 /* CoinTracker.app */,
+				0281D86D27F0788600CDC3C1 /* CurrentPriceWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +168,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0281D86E27F0788600CDC3C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0281D86F27F0788600CDC3C1 /* WidgetKit.framework */,
+				0281D87127F0788600CDC3C1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0281D87327F0788600CDC3C1 /* CurrentPriceWidget */ = {
+			isa = PBXGroup;
+			children = (
+				0281D87427F0788600CDC3C1 /* CurrentPriceWidget.swift */,
+				0281D87627F0788600CDC3C1 /* CurrentPriceWidget.intentdefinition */,
+				0281D87927F0788800CDC3C1 /* Info.plist */,
+			);
+			path = CurrentPriceWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +197,12 @@
 				02087F8D27E762A30027B8B8 /* Sources */,
 				02087F8E27E762A30027B8B8 /* Frameworks */,
 				02087F8F27E762A30027B8B8 /* Resources */,
+				0281D87F27F0788800CDC3C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0281D87D27F0788800CDC3C1 /* PBXTargetDependency */,
 			);
 			name = "CoinTracker (iOS)";
 			productName = "CoinTracker (iOS)";
@@ -155,6 +226,23 @@
 			productReference = 02087F9727E762A30027B8B8 /* CoinTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0281D86C27F0788600CDC3C1 /* CurrentPriceWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0281D88227F0788800CDC3C1 /* Build configuration list for PBXNativeTarget "CurrentPriceWidgetExtension" */;
+			buildPhases = (
+				0281D86927F0788600CDC3C1 /* Sources */,
+				0281D86A27F0788600CDC3C1 /* Frameworks */,
+				0281D86B27F0788600CDC3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrentPriceWidgetExtension;
+			productName = CurrentPriceWidgetExtension;
+			productReference = 0281D86D27F0788600CDC3C1 /* CurrentPriceWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,9 +259,12 @@
 					02087F9627E762A30027B8B8 = {
 						CreatedOnToolsVersion = 13.3;
 					};
+					0281D86C27F0788600CDC3C1 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
-			buildConfigurationList = 02087F8827E762A00027B8B8 /* Build configuration list for PBXProject "CoinTracker" */;
+			buildConfigurationList = 02087F8827E762A00027B8B8 /* Build configuration list for PBXProject "ApeTracker" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,6 +279,7 @@
 			targets = (
 				02087F9027E762A30027B8B8 /* CoinTracker (iOS) */,
 				02087F9627E762A30027B8B8 /* CoinTracker (macOS) */,
+				0281D86C27F0788600CDC3C1 /* CurrentPriceWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +301,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0281D86B27F0788600CDC3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0281D88527F0813C00CDC3C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -220,6 +320,7 @@
 				02087FD627E76D200027B8B8 /* CoinVM.swift in Sources */,
 				020883DB27E78AA80027B8B8 /* Coin.swift in Sources */,
 				02087F9A27E762A30027B8B8 /* CoinTrackerApp.swift in Sources */,
+				0281D87B27F0788800CDC3C1 /* CurrentPriceWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +335,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0281D86927F0788600CDC3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0281D87A27F0788800CDC3C1 /* CurrentPriceWidget.intentdefinition in Sources */,
+				0281D88427F078BE00CDC3C1 /* Coin.swift in Sources */,
+				0281D87527F0788600CDC3C1 /* CurrentPriceWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0281D87D27F0788800CDC3C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0281D86C27F0788600CDC3C1 /* CurrentPriceWidgetExtension */;
+			targetProxy = 0281D87C27F0788800CDC3C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		02087FA027E762A30027B8B8 /* Debug */ = {
@@ -349,6 +468,7 @@
 		02087FA327E762A30027B8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,6 +499,7 @@
 		02087FA427E762A30027B8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,10 +584,69 @@
 			};
 			name = Release;
 		};
+		0281D88027F0788800CDC3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrentPriceWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CurrentPriceWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.ApeTracker.CurrentPriceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0281D88127F0788800CDC3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJY4B596D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CurrentPriceWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CurrentPriceWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.umayanga.ApeTracker.CurrentPriceWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		02087F8827E762A00027B8B8 /* Build configuration list for PBXProject "CoinTracker" */ = {
+		02087F8827E762A00027B8B8 /* Build configuration list for PBXProject "ApeTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				02087FA027E762A30027B8B8 /* Debug */,
@@ -489,6 +669,15 @@
 			buildConfigurations = (
 				02087FA627E762A30027B8B8 /* Debug */,
 				02087FA727E762A30027B8B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0281D88227F0788800CDC3C1 /* Build configuration list for PBXNativeTarget "CurrentPriceWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0281D88027F0788800CDC3C1 /* Debug */,
+				0281D88127F0788800CDC3C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

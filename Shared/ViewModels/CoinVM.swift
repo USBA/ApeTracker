@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 class CoinVM: ObservableObject {
     @Published var coinPrice: String = ""
@@ -30,6 +31,7 @@ extension CoinVM {
             DispatchQueue.main.async {
                 self.coinPrice = coin.price ?? ""
                 self.isLoading = false
+                WidgetCenter.shared.reloadAllTimelines()
             }
         } catch {
             print("fetchCoinPrice - response - error : \(error)")
